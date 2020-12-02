@@ -1,0 +1,16 @@
+<h1 class="text-center font-weight-bold">Countdown</h1>
+<div class="container text-center">
+  <h1></h1>
+  <h1 class="" id="buttonNgatur"><countdown #cd1 [config]="{leftTime: timeData}"></countdown></h1>
+  <div class="container collapse show" id="buttonNgatur">
+  <button (click)="hourUp();cd1.pause()" class="bg-secondary text-light">Hour Up</button>
+  <button (click)="hourDown();cd1.pause()" class="bg-secondary text-light">Hour Down</button>
+  <button (click)="minuteUp();cd1.pause()" class="bg-secondary text-light">Minute Up</button>
+  <button (click)="minuteDown();cd1.pause()" class="bg-secondary text-light">Minute Down</button>
+  <button (click)="secondUp();cd1.pause()" class="bg-secondary text-light">Second Up</button>
+  <button (click)="secondDown();cd1.pause()" class="bg-secondary text-light">Second Down</button>
+  </div>
+  <button (click)="cd1.pause()" class="btn btn-link btn-sm bg-secondary text-light">pause</button>
+  <button (click)="cd1.resume()" class="btn btn-link btn-sm bg-secondary text-light">resume</button>
+  <button (click)="cd1.restart()" type="button" class="btn btn-link btn-sm bg-secondary text-light" data-toggle="collapse" data-target="#buttonNgatur">restart</button>
+</div>
